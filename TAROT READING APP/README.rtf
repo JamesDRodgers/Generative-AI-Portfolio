@@ -1,0 +1,53 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Tarot AI App\
+\
+This project simulates a tarot card reading by randomly drawing six tarot cards from a pre-defined tarot deck, determining whether each card is drawn upright or reversed, and then using OpenAI's GPT-3 (or a successor model) to generate a personalized tarot reading based on those cards.\
+\
+Features\
+\
+- Simulates a tarot reading by drawing six cards from a deck.\
+- Determines whether each card is drawn in an upright or reversed position.\
+- Uses OpenAI's GPT-3 API to generate a unique interpretation based on the drawn cards.\
+\
+How to Run the App\
+\
+1. Install the OpenAI Python library:\
+   You need to have the OpenAI library installed to communicate with the GPT-3 API. You can install it using pip:\
+\
+   pip install openai\
+\
+2. Add Your OpenAI API Key:\
+   Before running the application, ensure you have an OpenAI API key. You can get your key by signing up at https://beta.openai.com/signup/.\
+\
+   Once you have your API key, you can set it as an environment variable in your terminal:\
+\
+   export OPENAI_API_KEY='your-api-key-here'\
+\
+3. Run the Application:\
+   After setting up the environment and installing the necessary dependencies, run the Python script:\
+\
+   python tarotaiapp.py\
+\
+   The app will randomly draw six tarot cards and display whether they are upright or reversed. Then, it will use GPT-3 to provide a tarot reading based on the drawn cards.\
+\
+File Structure\
+\
+- tarotaiapp.py: The main application that handles the tarot reading and GPT-3 integration.\
+- tarot_deck: A pre-defined dictionary containing tarot card names along with their upright and reversed meanings.\
+\
+Customization\
+\
+You can customize the tarot deck by editing the tarot_deck dictionary inside the script to include additional cards or modify existing ones. The card meanings can be adjusted to fit the style or tradition of tarot reading you prefer.\
+\
+License\
+\
+This project is licensed under the MIT License. See the LICENSE file for more details.\
+}
